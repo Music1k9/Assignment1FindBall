@@ -1,0 +1,12 @@
+# Get inputs from the user
+v0 = float(input("Enter the initial velocity of the ball (ft/sec): "))
+g = 32.8  # Acceleration due to gravity in ft/sec^2
+
+# Calculate the time taken to reach maximum height
+t_max = v0 / g
+
+# Calculate the maximum height using the kinematic equation
+h_max = v0 * t_max - 0.5 * g * t_max**2
+
+# Display the maximum height
+print("The maximum height reached by the ball is:", h_max, "ft")
